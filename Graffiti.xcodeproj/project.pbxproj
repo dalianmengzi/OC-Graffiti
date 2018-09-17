@@ -7,15 +7,92 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D4B9A70214F7C9100A83EE5 /* BallColorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A39214F7C8E00A83EE5 /* BallColorModel.m */; };
+		3D4B9A71214F7C9100A83EE5 /* ImageManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A3D214F7C8F00A83EE5 /* ImageManger.m */; };
+		3D4B9A72214F7C9100A83EE5 /* ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A3F214F7C8F00A83EE5 /* ImagePicker.m */; };
+		3D4B9A73214F7C9100A83EE5 /* GraffitiBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4B9A40214F7C8F00A83EE5 /* GraffitiBoardViewController.xib */; };
+		3D4B9A74214F7C9100A83EE5 /* BaseBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A43214F7C8F00A83EE5 /* BaseBrush.m */; };
+		3D4B9A75214F7C9100A83EE5 /* EraserBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A46214F7C8F00A83EE5 /* EraserBrush.m */; };
+		3D4B9A76214F7C9100A83EE5 /* PencilBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A48214F7C8F00A83EE5 /* PencilBrush.m */; };
+		3D4B9A77214F7C9100A83EE5 /* ArrowBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A4B214F7C8F00A83EE5 /* ArrowBrush.m */; };
+		3D4B9A78214F7C9100A83EE5 /* DashLineBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A4D214F7C8F00A83EE5 /* DashLineBrush.m */; };
+		3D4B9A79214F7C9100A83EE5 /* LineBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A4F214F7C8F00A83EE5 /* LineBrush.m */; };
+		3D4B9A7A214F7C9100A83EE5 /* CircleBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A53214F7C8F00A83EE5 /* CircleBrush.m */; };
+		3D4B9A7B214F7C9100A83EE5 /* EllipseBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A55214F7C8F00A83EE5 /* EllipseBrush.m */; };
+		3D4B9A7C214F7C9100A83EE5 /* RectangleBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A57214F7C8F00A83EE5 /* RectangleBrush.m */; };
+		3D4B9A7D214F7C9100A83EE5 /* SquareBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A59214F7C8F00A83EE5 /* SquareBrush.m */; };
+		3D4B9A7E214F7C9100A83EE5 /* JessicaActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A5D214F7C9000A83EE5 /* JessicaActionSheet.m */; };
+		3D4B9A7F214F7C9100A83EE5 /* GraffitiBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A5E214F7C9000A83EE5 /* GraffitiBoardViewController.m */; };
+		3D4B9A80214F7C9100A83EE5 /* PaintingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A5F214F7C9000A83EE5 /* PaintingView.m */; };
+		3D4B9A81214F7C9100A83EE5 /* PaintingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A60214F7C9000A83EE5 /* PaintingLayer.m */; };
+		3D4B9A82214F7C9100A83EE5 /* BackImageBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A63214F7C9000A83EE5 /* BackImageBoard.m */; };
+		3D4B9A83214F7C9100A83EE5 /* BackImageBoardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A65214F7C9000A83EE5 /* BackImageBoardCollectionViewCell.m */; };
+		3D4B9A84214F7C9100A83EE5 /* BackImageBoardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4B9A66214F7C9000A83EE5 /* BackImageBoardCollectionViewCell.xib */; };
+		3D4B9A85214F7C9100A83EE5 /* CustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A68214F7C9000A83EE5 /* CustomWindow.m */; };
+		3D4B9A86214F7C9100A83EE5 /* DrawCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A6A214F7C9000A83EE5 /* DrawCommon.m */; };
+		3D4B9A87214F7C9100A83EE5 /* GraffitiBoardSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A6C214F7C9000A83EE5 /* GraffitiBoardSetting.m */; };
+		3D4B9A88214F7C9100A83EE5 /* GraffitiBoardSetting.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4B9A6D214F7C9000A83EE5 /* GraffitiBoardSetting.xib */; };
+		3D4B9A89214F7C9100A83EE5 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A6F214F7C9000A83EE5 /* UIView+Frame.m */; };
 		3DA1D3962125400900426979 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA1D3952125400900426979 /* AppDelegate.m */; };
 		3DA1D3992125400900426979 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA1D3982125400900426979 /* ViewController.m */; };
 		3DA1D39C2125400900426979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA1D39A2125400900426979 /* Main.storyboard */; };
 		3DA1D39E2125400900426979 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA1D39D2125400900426979 /* Assets.xcassets */; };
 		3DA1D3A12125400900426979 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA1D39F2125400900426979 /* LaunchScreen.storyboard */; };
 		3DA1D3A42125400900426979 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA1D3A32125400900426979 /* main.m */; };
+		6BA3618D4CD9A27B5255291E /* Pods_Graffiti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A5CF8877A90FB6CD881341 /* Pods_Graffiti.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D4B9A38214F7C8E00A83EE5 /* BallColorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallColorModel.h; sourceTree = "<group>"; };
+		3D4B9A39214F7C8E00A83EE5 /* BallColorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BallColorModel.m; sourceTree = "<group>"; };
+		3D4B9A3A214F7C8E00A83EE5 /* PaintingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintingLayer.h; sourceTree = "<group>"; };
+		3D4B9A3C214F7C8F00A83EE5 /* ImageManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageManger.h; sourceTree = "<group>"; };
+		3D4B9A3D214F7C8F00A83EE5 /* ImageManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageManger.m; sourceTree = "<group>"; };
+		3D4B9A3E214F7C8F00A83EE5 /* ImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePicker.h; sourceTree = "<group>"; };
+		3D4B9A3F214F7C8F00A83EE5 /* ImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePicker.m; sourceTree = "<group>"; };
+		3D4B9A40214F7C8F00A83EE5 /* GraffitiBoardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GraffitiBoardViewController.xib; sourceTree = "<group>"; };
+		3D4B9A42214F7C8F00A83EE5 /* BaseBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseBrush.h; sourceTree = "<group>"; };
+		3D4B9A43214F7C8F00A83EE5 /* BaseBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseBrush.m; sourceTree = "<group>"; };
+		3D4B9A45214F7C8F00A83EE5 /* EraserBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EraserBrush.h; sourceTree = "<group>"; };
+		3D4B9A46214F7C8F00A83EE5 /* EraserBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EraserBrush.m; sourceTree = "<group>"; };
+		3D4B9A47214F7C8F00A83EE5 /* PencilBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PencilBrush.h; sourceTree = "<group>"; };
+		3D4B9A48214F7C8F00A83EE5 /* PencilBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PencilBrush.m; sourceTree = "<group>"; };
+		3D4B9A4A214F7C8F00A83EE5 /* ArrowBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrowBrush.h; sourceTree = "<group>"; };
+		3D4B9A4B214F7C8F00A83EE5 /* ArrowBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrowBrush.m; sourceTree = "<group>"; };
+		3D4B9A4C214F7C8F00A83EE5 /* DashLineBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashLineBrush.h; sourceTree = "<group>"; };
+		3D4B9A4D214F7C8F00A83EE5 /* DashLineBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashLineBrush.m; sourceTree = "<group>"; };
+		3D4B9A4E214F7C8F00A83EE5 /* LineBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineBrush.h; sourceTree = "<group>"; };
+		3D4B9A4F214F7C8F00A83EE5 /* LineBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineBrush.m; sourceTree = "<group>"; };
+		3D4B9A50214F7C8F00A83EE5 /* PaintBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintBrush.h; sourceTree = "<group>"; };
+		3D4B9A52214F7C8F00A83EE5 /* CircleBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleBrush.h; sourceTree = "<group>"; };
+		3D4B9A53214F7C8F00A83EE5 /* CircleBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleBrush.m; sourceTree = "<group>"; };
+		3D4B9A54214F7C8F00A83EE5 /* EllipseBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EllipseBrush.h; sourceTree = "<group>"; };
+		3D4B9A55214F7C8F00A83EE5 /* EllipseBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EllipseBrush.m; sourceTree = "<group>"; };
+		3D4B9A56214F7C8F00A83EE5 /* RectangleBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectangleBrush.h; sourceTree = "<group>"; };
+		3D4B9A57214F7C8F00A83EE5 /* RectangleBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectangleBrush.m; sourceTree = "<group>"; };
+		3D4B9A58214F7C8F00A83EE5 /* SquareBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareBrush.h; sourceTree = "<group>"; };
+		3D4B9A59214F7C8F00A83EE5 /* SquareBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareBrush.m; sourceTree = "<group>"; };
+		3D4B9A5A214F7C8F00A83EE5 /* GraffitiBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraffitiBoardViewController.h; sourceTree = "<group>"; };
+		3D4B9A5B214F7C8F00A83EE5 /* JessicaActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JessicaActionSheet.h; sourceTree = "<group>"; };
+		3D4B9A5C214F7C9000A83EE5 /* PaintingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintingView.h; sourceTree = "<group>"; };
+		3D4B9A5D214F7C9000A83EE5 /* JessicaActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JessicaActionSheet.m; sourceTree = "<group>"; };
+		3D4B9A5E214F7C9000A83EE5 /* GraffitiBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraffitiBoardViewController.m; sourceTree = "<group>"; };
+		3D4B9A5F214F7C9000A83EE5 /* PaintingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintingView.m; sourceTree = "<group>"; };
+		3D4B9A60214F7C9000A83EE5 /* PaintingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintingLayer.m; sourceTree = "<group>"; };
+		3D4B9A62214F7C9000A83EE5 /* BackImageBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackImageBoard.h; sourceTree = "<group>"; };
+		3D4B9A63214F7C9000A83EE5 /* BackImageBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackImageBoard.m; sourceTree = "<group>"; };
+		3D4B9A64214F7C9000A83EE5 /* BackImageBoardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackImageBoardCollectionViewCell.h; sourceTree = "<group>"; };
+		3D4B9A65214F7C9000A83EE5 /* BackImageBoardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackImageBoardCollectionViewCell.m; sourceTree = "<group>"; };
+		3D4B9A66214F7C9000A83EE5 /* BackImageBoardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackImageBoardCollectionViewCell.xib; sourceTree = "<group>"; };
+		3D4B9A67214F7C9000A83EE5 /* CustomWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWindow.h; sourceTree = "<group>"; };
+		3D4B9A68214F7C9000A83EE5 /* CustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWindow.m; sourceTree = "<group>"; };
+		3D4B9A69214F7C9000A83EE5 /* DrawCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawCommon.h; sourceTree = "<group>"; };
+		3D4B9A6A214F7C9000A83EE5 /* DrawCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawCommon.m; sourceTree = "<group>"; };
+		3D4B9A6B214F7C9000A83EE5 /* GraffitiBoardSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraffitiBoardSetting.h; sourceTree = "<group>"; };
+		3D4B9A6C214F7C9000A83EE5 /* GraffitiBoardSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraffitiBoardSetting.m; sourceTree = "<group>"; };
+		3D4B9A6D214F7C9000A83EE5 /* GraffitiBoardSetting.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GraffitiBoardSetting.xib; sourceTree = "<group>"; };
+		3D4B9A6E214F7C9000A83EE5 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		3D4B9A6F214F7C9000A83EE5 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		3DA1D3912125400900426979 /* Graffiti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graffiti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA1D3942125400900426979 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3DA1D3952125400900426979 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +103,9 @@
 		3DA1D3A02125400900426979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DA1D3A22125400900426979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DA1D3A32125400900426979 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		70A5CF8877A90FB6CD881341 /* Pods_Graffiti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Graffiti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C7E015ACE76A122C980CDBC /* Pods-Graffiti.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graffiti.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Graffiti/Pods-Graffiti.debug.xcconfig"; sourceTree = "<group>"; };
+		D94441FBDD6F44ADA630424D /* Pods-Graffiti.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graffiti.release.xcconfig"; path = "Pods/Target Support Files/Pods-Graffiti/Pods-Graffiti.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +113,121 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BA3618D4CD9A27B5255291E /* Pods_Graffiti.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DA816C2DD94CC53406407BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70A5CF8877A90FB6CD881341 /* Pods_Graffiti.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D4B9A37214F7C8E00A83EE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D4B9A38214F7C8E00A83EE5 /* BallColorModel.h */,
+				3D4B9A39214F7C8E00A83EE5 /* BallColorModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D4B9A3B214F7C8F00A83EE5 /* Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				3D4B9A3C214F7C8F00A83EE5 /* ImageManger.h */,
+				3D4B9A3D214F7C8F00A83EE5 /* ImageManger.m */,
+				3D4B9A3E214F7C8F00A83EE5 /* ImagePicker.h */,
+				3D4B9A3F214F7C8F00A83EE5 /* ImagePicker.m */,
+			);
+			path = Behavior;
+			sourceTree = "<group>";
+		};
+		3D4B9A41214F7C8F00A83EE5 /* Brush */ = {
+			isa = PBXGroup;
+			children = (
+				3D4B9A42214F7C8F00A83EE5 /* BaseBrush.h */,
+				3D4B9A43214F7C8F00A83EE5 /* BaseBrush.m */,
+				3D4B9A44214F7C8F00A83EE5 /* Curve */,
+				3D4B9A49214F7C8F00A83EE5 /* LineBrush */,
+				3D4B9A50214F7C8F00A83EE5 /* PaintBrush.h */,
+				3D4B9A51214F7C8F00A83EE5 /* RectBrush */,
+			);
+			path = Brush;
+			sourceTree = "<group>";
+		};
+		3D4B9A44214F7C8F00A83EE5 /* Curve */ = {
+			isa = PBXGroup;
+			children = (
+				3D4B9A45214F7C8F00A83EE5 /* EraserBrush.h */,
+				3D4B9A46214F7C8F00A83EE5 /* EraserBrush.m */,
+				3D4B9A47214F7C8F00A83EE5 /* PencilBrush.h */,
+				3D4B9A48214F7C8F00A83EE5 /* PencilBrush.m */,
+			);
+			path = Curve;
+			sourceTree = "<group>";
+		};
+		3D4B9A49214F7C8F00A83EE5 /* LineBrush */ = {
+			isa = PBXGroup;
+			children = (
+				3D4B9A4A214F7C8F00A83EE5 /* ArrowBrush.h */,
+				3D4B9A4B214F7C8F00A83EE5 /* ArrowBrush.m */,
+				3D4B9A4C214F7C8F00A83EE5 /* DashLineBrush.h */,
+				3D4B9A4D214F7C8F00A83EE5 /* DashLineBrush.m */,
+				3D4B9A4E214F7C8F00A83EE5 /* LineBrush.h */,
+				3D4B9A4F214F7C8F00A83EE5 /* LineBrush.m */,
+			);
+			path = LineBrush;
+			sourceTree = "<group>";
+		};
+		3D4B9A51214F7C8F00A83EE5 /* RectBrush */ = {
+			isa = PBXGroup;
+			children = (
+				3D4B9A52214F7C8F00A83EE5 /* CircleBrush.h */,
+				3D4B9A53214F7C8F00A83EE5 /* CircleBrush.m */,
+				3D4B9A54214F7C8F00A83EE5 /* EllipseBrush.h */,
+				3D4B9A55214F7C8F00A83EE5 /* EllipseBrush.m */,
+				3D4B9A56214F7C8F00A83EE5 /* RectangleBrush.h */,
+				3D4B9A57214F7C8F00A83EE5 /* RectangleBrush.m */,
+				3D4B9A58214F7C8F00A83EE5 /* SquareBrush.h */,
+				3D4B9A59214F7C8F00A83EE5 /* SquareBrush.m */,
+			);
+			path = RectBrush;
+			sourceTree = "<group>";
+		};
+		3D4B9A61214F7C9000A83EE5 /* GraffitiBoardSettingView */ = {
+			isa = PBXGroup;
+			children = (
+				3D4B9A62214F7C9000A83EE5 /* BackImageBoard.h */,
+				3D4B9A63214F7C9000A83EE5 /* BackImageBoard.m */,
+				3D4B9A64214F7C9000A83EE5 /* BackImageBoardCollectionViewCell.h */,
+				3D4B9A65214F7C9000A83EE5 /* BackImageBoardCollectionViewCell.m */,
+				3D4B9A66214F7C9000A83EE5 /* BackImageBoardCollectionViewCell.xib */,
+				3D4B9A67214F7C9000A83EE5 /* CustomWindow.h */,
+				3D4B9A68214F7C9000A83EE5 /* CustomWindow.m */,
+				3D4B9A69214F7C9000A83EE5 /* DrawCommon.h */,
+				3D4B9A6A214F7C9000A83EE5 /* DrawCommon.m */,
+				3D4B9A6B214F7C9000A83EE5 /* GraffitiBoardSetting.h */,
+				3D4B9A6C214F7C9000A83EE5 /* GraffitiBoardSetting.m */,
+				3D4B9A6D214F7C9000A83EE5 /* GraffitiBoardSetting.xib */,
+				3D4B9A6E214F7C9000A83EE5 /* UIView+Frame.h */,
+				3D4B9A6F214F7C9000A83EE5 /* UIView+Frame.m */,
+			);
+			path = GraffitiBoardSettingView;
+			sourceTree = "<group>";
+		};
 		3DA1D3882125400900426979 = {
 			isa = PBXGroup;
 			children = (
 				3DA1D3932125400900426979 /* Graffiti */,
 				3DA1D3922125400900426979 /* Products */,
+				5B83A6000206733674A79830 /* Pods */,
+				0DA816C2DD94CC53406407BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +242,19 @@
 		3DA1D3932125400900426979 /* Graffiti */ = {
 			isa = PBXGroup;
 			children = (
+				3D4B9A3B214F7C8F00A83EE5 /* Behavior */,
+				3D4B9A41214F7C8F00A83EE5 /* Brush */,
+				3D4B9A61214F7C9000A83EE5 /* GraffitiBoardSettingView */,
+				3D4B9A5A214F7C8F00A83EE5 /* GraffitiBoardViewController.h */,
+				3D4B9A5E214F7C9000A83EE5 /* GraffitiBoardViewController.m */,
+				3D4B9A40214F7C8F00A83EE5 /* GraffitiBoardViewController.xib */,
+				3D4B9A5B214F7C8F00A83EE5 /* JessicaActionSheet.h */,
+				3D4B9A5D214F7C9000A83EE5 /* JessicaActionSheet.m */,
+				3D4B9A37214F7C8E00A83EE5 /* Model */,
+				3D4B9A3A214F7C8E00A83EE5 /* PaintingLayer.h */,
+				3D4B9A60214F7C9000A83EE5 /* PaintingLayer.m */,
+				3D4B9A5C214F7C9000A83EE5 /* PaintingView.h */,
+				3D4B9A5F214F7C9000A83EE5 /* PaintingView.m */,
 				3DA1D3942125400900426979 /* AppDelegate.h */,
 				3DA1D3952125400900426979 /* AppDelegate.m */,
 				3DA1D3972125400900426979 /* ViewController.h */,
@@ -71,6 +268,15 @@
 			path = Graffiti;
 			sourceTree = "<group>";
 		};
+		5B83A6000206733674A79830 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C7E015ACE76A122C980CDBC /* Pods-Graffiti.debug.xcconfig */,
+				D94441FBDD6F44ADA630424D /* Pods-Graffiti.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +284,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DA1D3A72125400900426979 /* Build configuration list for PBXNativeTarget "Graffiti" */;
 			buildPhases = (
+				F9A23F1D2EE23946F4C475CA /* [CP] Check Pods Manifest.lock */,
 				3DA1D38D2125400900426979 /* Sources */,
 				3DA1D38E2125400900426979 /* Frameworks */,
 				3DA1D38F2125400900426979 /* Resources */,
+				AE72406E2D3266EB1C3257BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,21 +338,96 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DA1D3A12125400900426979 /* LaunchScreen.storyboard in Resources */,
+				3D4B9A84214F7C9100A83EE5 /* BackImageBoardCollectionViewCell.xib in Resources */,
 				3DA1D39E2125400900426979 /* Assets.xcassets in Resources */,
+				3D4B9A88214F7C9100A83EE5 /* GraffitiBoardSetting.xib in Resources */,
 				3DA1D39C2125400900426979 /* Main.storyboard in Resources */,
+				3D4B9A73214F7C9100A83EE5 /* GraffitiBoardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE72406E2D3266EB1C3257BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Graffiti/Pods-Graffiti-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/ZYQAssetPickerController/ZYQAssetPickerController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZYQAssetPickerController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Graffiti/Pods-Graffiti-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9A23F1D2EE23946F4C475CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Graffiti-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DA1D38D2125400900426979 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D4B9A80214F7C9100A83EE5 /* PaintingView.m in Sources */,
+				3D4B9A71214F7C9100A83EE5 /* ImageManger.m in Sources */,
+				3D4B9A7F214F7C9100A83EE5 /* GraffitiBoardViewController.m in Sources */,
+				3D4B9A7B214F7C9100A83EE5 /* EllipseBrush.m in Sources */,
+				3D4B9A74214F7C9100A83EE5 /* BaseBrush.m in Sources */,
 				3DA1D3992125400900426979 /* ViewController.m in Sources */,
+				3D4B9A83214F7C9100A83EE5 /* BackImageBoardCollectionViewCell.m in Sources */,
+				3D4B9A85214F7C9100A83EE5 /* CustomWindow.m in Sources */,
+				3D4B9A87214F7C9100A83EE5 /* GraffitiBoardSetting.m in Sources */,
 				3DA1D3A42125400900426979 /* main.m in Sources */,
+				3D4B9A70214F7C9100A83EE5 /* BallColorModel.m in Sources */,
 				3DA1D3962125400900426979 /* AppDelegate.m in Sources */,
+				3D4B9A81214F7C9100A83EE5 /* PaintingLayer.m in Sources */,
+				3D4B9A7C214F7C9100A83EE5 /* RectangleBrush.m in Sources */,
+				3D4B9A77214F7C9100A83EE5 /* ArrowBrush.m in Sources */,
+				3D4B9A7E214F7C9100A83EE5 /* JessicaActionSheet.m in Sources */,
+				3D4B9A82214F7C9100A83EE5 /* BackImageBoard.m in Sources */,
+				3D4B9A78214F7C9100A83EE5 /* DashLineBrush.m in Sources */,
+				3D4B9A89214F7C9100A83EE5 /* UIView+Frame.m in Sources */,
+				3D4B9A7A214F7C9100A83EE5 /* CircleBrush.m in Sources */,
+				3D4B9A75214F7C9100A83EE5 /* EraserBrush.m in Sources */,
+				3D4B9A72214F7C9100A83EE5 /* ImagePicker.m in Sources */,
+				3D4B9A7D214F7C9100A83EE5 /* SquareBrush.m in Sources */,
+				3D4B9A79214F7C9100A83EE5 /* LineBrush.m in Sources */,
+				3D4B9A86214F7C9100A83EE5 /* DrawCommon.m in Sources */,
+				3D4B9A76214F7C9100A83EE5 /* PencilBrush.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +559,7 @@
 		};
 		3DA1D3A82125400900426979 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C7E015ACE76A122C980CDBC /* Pods-Graffiti.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +575,7 @@
 		};
 		3DA1D3A92125400900426979 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D94441FBDD6F44ADA630424D /* Pods-Graffiti.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "GraffitiBoardViewController.h"
 @interface ViewController (){
     NSArray* list;
 }
@@ -51,5 +51,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
     NSLog(@"%@", list[indexPath.row]);
+    GraffitiBoardViewController *vc = [[GraffitiBoardViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:true];
 }
 @end
