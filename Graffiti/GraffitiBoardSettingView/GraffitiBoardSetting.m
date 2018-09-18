@@ -54,11 +54,12 @@ static NSString * const collectionCellID = @"collectionCellID";
 {
     [super layoutSubviews];
     
-    CGFloat normalW = self.width * 0.25;
+    CGFloat normalW = self.width * 0.16;
     
     UIButton *btn = [self.buttomView.subviews firstObject];
-    
-    self.buttomViewH.constant = normalW * btn.currentImage.size.height / btn.currentImage.size.width;
+
+    CGFloat normalH = normalW * btn.currentImage.size.height / btn.currentImage.size.width;
+    self.buttomViewH.constant = normalH > 70 ? 70 : normalH;
     
     if (!_lastIndexPath){
         //设置默认是属性
@@ -100,7 +101,8 @@ static NSString * const collectionCellID = @"collectionCellID";
 }
 
 - (IBAction)openCamera:(id)sender {
-    
+
+
     if (self.stype) {
         
         self.stype(setTypeCamera);
@@ -134,7 +136,8 @@ static NSString * const collectionCellID = @"collectionCellID";
 }
 
 - (IBAction)eraser:(id)sender {
-    
+
+   
     if (self.stype) {
     
         self.stype(setTypeEraser);
@@ -144,7 +147,7 @@ static NSString * const collectionCellID = @"collectionCellID";
 }
 
 - (IBAction)back:(id)sender {
-    
+
     if (self.stype) {
     
         self.stype(setTypeBack);
@@ -154,7 +157,7 @@ static NSString * const collectionCellID = @"collectionCellID";
 }
 
 - (IBAction)revocation:(id)sender {
-    
+
     if (self.stype) {
     
         self.stype(setTyperegeneration);
@@ -164,7 +167,7 @@ static NSString * const collectionCellID = @"collectionCellID";
 }
 
 - (IBAction)clearAll:(id)sender {
-    
+
     if (self.stype) {
     
         self.stype(setTypeClearAll);
@@ -213,6 +216,8 @@ static NSString * const collectionCellID = @"collectionCellID";
     self.ballView.ballColor = self.colors[[model.ballColor integerValue]];;
     model.isBallColor = YES;
     [self.collectionView reloadItemsAtIndexPaths:@[indexPath]];
+    self.stype(setTypeColor);
+
 }
 
 

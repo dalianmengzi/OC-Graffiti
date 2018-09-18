@@ -44,7 +44,7 @@
     
     if (!CGRectContainsPoint(self.animationView.frame, touchPoint))
         [self hideWithAnimationTime:self.animationTime];
-    
+
 }
 
 - (void)showWithAnimationTime:(NSTimeInterval)second {

@@ -38,6 +38,9 @@
 		3D7499AD2150D63C00C5B5A4 /* 画笔 .png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7499A82150D63C00C5B5A4 /* 画笔 .png */; };
 		3D7499AE2150D63C00C5B5A4 /* 清除.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7499A92150D63C00C5B5A4 /* 清除.png */; };
 		3D7499AF2150D63C00C5B5A4 /* 拍摄.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7499AA2150D63C00C5B5A4 /* 拍摄.png */; };
+		3D7499B32150E7BC00C5B5A4 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7499B02150E7BB00C5B5A4 /* delete.png */; };
+		3D7499B42150E7BC00C5B5A4 /* 撤销.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7499B12150E7BB00C5B5A4 /* 撤销.png */; };
+		3D7499B52150E7BC00C5B5A4 /* 恢复.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7499B22150E7BB00C5B5A4 /* 恢复.png */; };
 		3DA1D3962125400900426979 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA1D3952125400900426979 /* AppDelegate.m */; };
 		3DA1D3992125400900426979 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA1D3982125400900426979 /* ViewController.m */; };
 		3DA1D39C2125400900426979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA1D39A2125400900426979 /* Main.storyboard */; };
@@ -103,6 +106,9 @@
 		3D7499A82150D63C00C5B5A4 /* 画笔 .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "画笔 .png"; sourceTree = "<group>"; };
 		3D7499A92150D63C00C5B5A4 /* 清除.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "清除.png"; sourceTree = "<group>"; };
 		3D7499AA2150D63C00C5B5A4 /* 拍摄.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "拍摄.png"; sourceTree = "<group>"; };
+		3D7499B02150E7BB00C5B5A4 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		3D7499B12150E7BB00C5B5A4 /* 撤销.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "撤销.png"; sourceTree = "<group>"; };
+		3D7499B22150E7BB00C5B5A4 /* 恢复.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "恢复.png"; sourceTree = "<group>"; };
 		3DA1D3912125400900426979 /* Graffiti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graffiti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA1D3942125400900426979 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3DA1D3952125400900426979 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -234,6 +240,9 @@
 		3D7499A52150D62800C5B5A4 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				3D7499B12150E7BB00C5B5A4 /* 撤销.png */,
+				3D7499B22150E7BB00C5B5A4 /* 恢复.png */,
+				3D7499B02150E7BB00C5B5A4 /* delete.png */,
 				3D7499A72150D63C00C5B5A4 /* 保存.png */,
 				3D7499A82150D63C00C5B5A4 /* 画笔 .png */,
 				3D7499AA2150D63C00C5B5A4 /* 拍摄.png */,
@@ -360,6 +369,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D7499B42150E7BC00C5B5A4 /* 撤销.png in Resources */,
+				3D7499B32150E7BC00C5B5A4 /* delete.png in Resources */,
+				3D7499B52150E7BC00C5B5A4 /* 恢复.png in Resources */,
 				3D7499AE2150D63C00C5B5A4 /* 清除.png in Resources */,
 				3D7499AF2150D63C00C5B5A4 /* 拍摄.png in Resources */,
 				3DA1D3A12125400900426979 /* LaunchScreen.storyboard in Resources */,

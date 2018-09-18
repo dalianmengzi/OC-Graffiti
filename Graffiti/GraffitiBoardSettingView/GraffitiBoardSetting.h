@@ -16,7 +16,8 @@ typedef NS_ENUM(NSInteger,setType) {
     setTypeEraser,
     setTypeBack,
     setTyperegeneration,
-    setTypeClearAll
+    setTypeClearAll,
+    setTypeColor
 };
 
 typedef void(^boardSettingBlock)(setType type);

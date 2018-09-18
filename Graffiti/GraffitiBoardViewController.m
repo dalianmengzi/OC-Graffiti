@@ -179,8 +179,8 @@
                 case setTypeAlbum:
                 {
                     
-//                   [weakSelf hideSettingBoard];
-                    
+                   [weakSelf hideSettingBoard];
+
                     if ([self.delegate respondsToSelector:@selector(drawView:action:)]) {
                         [self.delegate drawView:self action:actionOpenAlbum];
                     }
@@ -194,6 +194,7 @@
                     break;
                 case setTypeEraser:
                 {
+                    [weakSelf hideSettingBoard];
                     id<PaintBrush> paintBrush;
                     paintBrush = [BaseBrush brushWithType:BrushTypeEraser];
                     paintBrush.lineWidth = weakSelf.settingBoard.getLineWidth;
@@ -203,7 +204,7 @@
                     break;
                 case setTypeBack:
                 {
-                    
+//                     [weakSelf hideSettingBoard];
                     if(weakSelf.paintingView.canUndo) {
                         
                         [weakSelf.paintingView undo];
@@ -214,7 +215,7 @@
                     break;
                 case setTyperegeneration:
                 {
-                    
+//                     [weakSelf hideSettingBoard];
                     if(weakSelf.paintingView.canRedo) {
                         
                         [weakSelf.paintingView redo];
@@ -239,7 +240,10 @@
                     
                 }
                     break;
-                    
+                case setTypeColor:
+                {
+                    [weakSelf hideSettingBoard];
+                }
                 default:
                     break;
             }
