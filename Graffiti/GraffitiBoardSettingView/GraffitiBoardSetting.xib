@@ -86,14 +86,14 @@
                                 </button>
                                 <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgk-83-QQ8">
                                     <rect key="frame" x="114.5" y="0.0" width="114.5" height="40"/>
-                                    <state key="normal" image="恢复.png"/>
+                                    <state key="normal" image="撤销.png"/>
                                     <connections>
                                         <action selector="back:" destination="iN0-l3-epB" eventType="touchUpInside" id="N2s-cx-IBM"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBC-DT-PAc">
                                     <rect key="frame" x="228.5" y="0.0" width="114.5" height="40"/>
-                                    <state key="normal" image="撤销.png"/>
+                                    <state key="normal" image="恢复.png"/>
                                     <connections>
                                         <action selector="revocation:" destination="iN0-l3-epB" eventType="touchUpInside" id="f4G-yS-2lU"/>
                                     </connections>

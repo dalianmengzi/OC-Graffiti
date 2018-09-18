@@ -178,7 +178,7 @@ static NSString * const collectionCellID = @"collectionCellID";
 
 - (IBAction)sliderView:(UISlider *)sender {
     
-    self.ballView.ballSize = sender.value;
+    self.ballView.ballSize = 0.2;//sender.value;
     
 }
 
