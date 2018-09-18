@@ -33,6 +33,11 @@
 		3D4B9A87214F7C9100A83EE5 /* GraffitiBoardSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A6C214F7C9000A83EE5 /* GraffitiBoardSetting.m */; };
 		3D4B9A88214F7C9100A83EE5 /* GraffitiBoardSetting.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4B9A6D214F7C9000A83EE5 /* GraffitiBoardSetting.xib */; };
 		3D4B9A89214F7C9100A83EE5 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9A6F214F7C9000A83EE5 /* UIView+Frame.m */; };
+		3D7499AB2150D63C00C5B5A4 /* 相片.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7499A62150D63C00C5B5A4 /* 相片.png */; };
+		3D7499AC2150D63C00C5B5A4 /* 保存.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7499A72150D63C00C5B5A4 /* 保存.png */; };
+		3D7499AD2150D63C00C5B5A4 /* 画笔 .png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7499A82150D63C00C5B5A4 /* 画笔 .png */; };
+		3D7499AE2150D63C00C5B5A4 /* 清除.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7499A92150D63C00C5B5A4 /* 清除.png */; };
+		3D7499AF2150D63C00C5B5A4 /* 拍摄.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7499AA2150D63C00C5B5A4 /* 拍摄.png */; };
 		3DA1D3962125400900426979 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA1D3952125400900426979 /* AppDelegate.m */; };
 		3DA1D3992125400900426979 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA1D3982125400900426979 /* ViewController.m */; };
 		3DA1D39C2125400900426979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA1D39A2125400900426979 /* Main.storyboard */; };
@@ -93,6 +98,11 @@
 		3D4B9A6D214F7C9000A83EE5 /* GraffitiBoardSetting.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GraffitiBoardSetting.xib; sourceTree = "<group>"; };
 		3D4B9A6E214F7C9000A83EE5 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		3D4B9A6F214F7C9000A83EE5 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		3D7499A62150D63C00C5B5A4 /* 相片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "相片.png"; sourceTree = "<group>"; };
+		3D7499A72150D63C00C5B5A4 /* 保存.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "保存.png"; sourceTree = "<group>"; };
+		3D7499A82150D63C00C5B5A4 /* 画笔 .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "画笔 .png"; sourceTree = "<group>"; };
+		3D7499A92150D63C00C5B5A4 /* 清除.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "清除.png"; sourceTree = "<group>"; };
+		3D7499AA2150D63C00C5B5A4 /* 拍摄.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "拍摄.png"; sourceTree = "<group>"; };
 		3DA1D3912125400900426979 /* Graffiti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graffiti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA1D3942125400900426979 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3DA1D3952125400900426979 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -221,6 +231,18 @@
 			path = GraffitiBoardSettingView;
 			sourceTree = "<group>";
 		};
+		3D7499A52150D62800C5B5A4 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				3D7499A72150D63C00C5B5A4 /* 保存.png */,
+				3D7499A82150D63C00C5B5A4 /* 画笔 .png */,
+				3D7499AA2150D63C00C5B5A4 /* 拍摄.png */,
+				3D7499A92150D63C00C5B5A4 /* 清除.png */,
+				3D7499A62150D63C00C5B5A4 /* 相片.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
 		3DA1D3882125400900426979 = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +264,7 @@
 		3DA1D3932125400900426979 /* Graffiti */ = {
 			isa = PBXGroup;
 			children = (
+				3D7499A52150D62800C5B5A4 /* img */,
 				3D4B9A3B214F7C8F00A83EE5 /* Behavior */,
 				3D4B9A41214F7C8F00A83EE5 /* Brush */,
 				3D4B9A61214F7C9000A83EE5 /* GraffitiBoardSettingView */,
@@ -337,11 +360,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D7499AE2150D63C00C5B5A4 /* 清除.png in Resources */,
+				3D7499AF2150D63C00C5B5A4 /* 拍摄.png in Resources */,
 				3DA1D3A12125400900426979 /* LaunchScreen.storyboard in Resources */,
 				3D4B9A84214F7C9100A83EE5 /* BackImageBoardCollectionViewCell.xib in Resources */,
 				3DA1D39E2125400900426979 /* Assets.xcassets in Resources */,
+				3D7499AB2150D63C00C5B5A4 /* 相片.png in Resources */,
 				3D4B9A88214F7C9100A83EE5 /* GraffitiBoardSetting.xib in Resources */,
 				3DA1D39C2125400900426979 /* Main.storyboard in Resources */,
+				3D7499AD2150D63C00C5B5A4 /* 画笔 .png in Resources */,
+				3D7499AC2150D63C00C5B5A4 /* 保存.png in Resources */,
 				3D4B9A73214F7C9100A83EE5 /* GraffitiBoardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,16 +382,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Graffiti/Pods-Graffiti-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/ZYQAssetPickerController/ZYQAssetPickerController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZYQAssetPickerController.framework",
@@ -378,15 +402,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Graffiti-checkManifestLockResult.txt",
 			);
@@ -567,7 +587,7 @@
 				INFOPLIST_FILE = Graffiti/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Criss.Graffiti;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iclass.s;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -583,7 +603,7 @@
 				INFOPLIST_FILE = Graffiti/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Criss.Graffiti;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iclass.s;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
