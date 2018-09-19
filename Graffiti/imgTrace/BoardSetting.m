@@ -30,7 +30,14 @@ static NSString * const collectionCellID = @"collectionCellID";
 
 @property (nonatomic, strong) UIColor *currentColor;
 @property (nonatomic, assign) CGFloat currentLine;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *buttomViewH;
+@property (weak, nonatomic) IBOutlet UIButton *pen;
+@property (weak, nonatomic) IBOutlet UIButton *save;
+@property (weak, nonatomic) IBOutlet UIButton *clear;
+@property (weak, nonatomic) IBOutlet UIButton *back;
+@property (weak, nonatomic) IBOutlet UIButton *del;
+
+@property (weak, nonatomic) IBOutlet UIButton *reset;
+
 @property (weak, nonatomic) IBOutlet UIView *buttomView;
 @property (nonatomic, copy) boardSettingBlock stype;
 @property (weak, nonatomic) IBOutlet UIView *centerView;
@@ -47,19 +54,12 @@ static NSString * const collectionCellID = @"collectionCellID";
 
     self.ballView = [[ColorBall alloc] init] ;
     self.centerView.hidden = self.collectionView.hidden = NO;
-
+    
 }
 
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-
-    CGFloat normalW = self.width * 0.16;
-
-    UIButton *btn = [self.buttomView.subviews firstObject];
-
-    CGFloat normalH = normalW * btn.currentImage.size.height / btn.currentImage.size.width;
-    self.buttomViewH.constant = normalH > 70 ? 70 : normalH;
 
 
      list = @[self.minWidth, self.secondWidth,self.thirdWidth,self.fourWidth,self.maxWidth];
@@ -111,31 +111,7 @@ static NSString * const collectionCellID = @"collectionCellID";
 
 }
 
-- (IBAction)openCamera:(id)sender {
 
-
-    if (self.stype) {
-
-        self.stype(setTypeCamera);
-
-    }
-
-}
-
-- (IBAction)openAlbum:(UIButton *)sender {
-
-
-    self.centerView.hidden = self.collectionView.hidden = YES;
-
-    if (sender.tag) return;
-
-    if (self.stype) {
-
-        self.stype(setTypeAlbum);
-
-    }
-
-}
 
 - (IBAction)saveImage:(id)sender {
 
@@ -200,6 +176,9 @@ static NSString * const collectionCellID = @"collectionCellID";
 
 }
 
+-(void)setToolShadow:(UIButton *)sender{
+
+}
 
 #pragma mark - collectionView
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
