@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "imgTrace.h"
 #import "GraffitiBoardViewController.h"
 @interface ViewController (){
     NSArray* list;
+    NSArray* VClist;
 }
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
@@ -18,7 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    list = @[@"涂鸦"];
+    list = @[@"涂鸦",@"痕迹"];
+
     [self setTableView];
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -51,7 +54,14 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
     NSLog(@"%@", list[indexPath.row]);
-    GraffitiBoardViewController *vc = [[GraffitiBoardViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:true];
+    if (indexPath.row == 0){
+        GraffitiBoardViewController *vc = [[GraffitiBoardViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:true];
+    }else{
+        imgTrace *vc = [[imgTrace alloc] init];
+        [self.navigationController pushViewController:vc animated:true];
+    }
+
+
 }
 @end

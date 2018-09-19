@@ -41,12 +41,16 @@
 		3D7499B32150E7BC00C5B5A4 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7499B02150E7BB00C5B5A4 /* delete.png */; };
 		3D7499B42150E7BC00C5B5A4 /* 撤销.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7499B12150E7BB00C5B5A4 /* 撤销.png */; };
 		3D7499B52150E7BC00C5B5A4 /* 恢复.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7499B22150E7BB00C5B5A4 /* 恢复.png */; };
+		3D7499BA2151151200C5B5A4 /* imgTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7499B82151151200C5B5A4 /* imgTrace.m */; };
+		3D7499BB2151151200C5B5A4 /* imgTrace.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D7499B92151151200C5B5A4 /* imgTrace.xib */; };
 		3DA1D3962125400900426979 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA1D3952125400900426979 /* AppDelegate.m */; };
 		3DA1D3992125400900426979 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA1D3982125400900426979 /* ViewController.m */; };
 		3DA1D39C2125400900426979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA1D39A2125400900426979 /* Main.storyboard */; };
 		3DA1D39E2125400900426979 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA1D39D2125400900426979 /* Assets.xcassets */; };
 		3DA1D3A12125400900426979 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA1D39F2125400900426979 /* LaunchScreen.storyboard */; };
 		3DA1D3A42125400900426979 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA1D3A32125400900426979 /* main.m */; };
+		3DCA56C72151E97C00706679 /* BoardSetting.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA56C52151E97C00706679 /* BoardSetting.xib */; };
+		3DCA56CA2151EAF500706679 /* BoardSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA56C92151EAF500706679 /* BoardSetting.m */; };
 		6BA3618D4CD9A27B5255291E /* Pods_Graffiti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A5CF8877A90FB6CD881341 /* Pods_Graffiti.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +113,9 @@
 		3D7499B02150E7BB00C5B5A4 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 		3D7499B12150E7BB00C5B5A4 /* 撤销.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "撤销.png"; sourceTree = "<group>"; };
 		3D7499B22150E7BB00C5B5A4 /* 恢复.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "恢复.png"; sourceTree = "<group>"; };
+		3D7499B72151151200C5B5A4 /* imgTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imgTrace.h; sourceTree = "<group>"; };
+		3D7499B82151151200C5B5A4 /* imgTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imgTrace.m; sourceTree = "<group>"; };
+		3D7499B92151151200C5B5A4 /* imgTrace.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = imgTrace.xib; sourceTree = "<group>"; };
 		3DA1D3912125400900426979 /* Graffiti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graffiti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA1D3942125400900426979 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3DA1D3952125400900426979 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -119,6 +126,9 @@
 		3DA1D3A02125400900426979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DA1D3A22125400900426979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DA1D3A32125400900426979 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DCA56C52151E97C00706679 /* BoardSetting.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoardSetting.xib; sourceTree = "<group>"; };
+		3DCA56C82151EAF500706679 /* BoardSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoardSetting.h; sourceTree = "<group>"; };
+		3DCA56C92151EAF500706679 /* BoardSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoardSetting.m; sourceTree = "<group>"; };
 		70A5CF8877A90FB6CD881341 /* Pods_Graffiti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Graffiti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C7E015ACE76A122C980CDBC /* Pods-Graffiti.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graffiti.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Graffiti/Pods-Graffiti.debug.xcconfig"; sourceTree = "<group>"; };
 		D94441FBDD6F44ADA630424D /* Pods-Graffiti.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graffiti.release.xcconfig"; path = "Pods/Target Support Files/Pods-Graffiti/Pods-Graffiti.release.xcconfig"; sourceTree = "<group>"; };
@@ -252,6 +262,19 @@
 			path = img;
 			sourceTree = "<group>";
 		};
+		3D7499B6215114DF00C5B5A4 /* imgTrace */ = {
+			isa = PBXGroup;
+			children = (
+				3D7499B72151151200C5B5A4 /* imgTrace.h */,
+				3D7499B82151151200C5B5A4 /* imgTrace.m */,
+				3D7499B92151151200C5B5A4 /* imgTrace.xib */,
+				3DCA56C52151E97C00706679 /* BoardSetting.xib */,
+				3DCA56C82151EAF500706679 /* BoardSetting.h */,
+				3DCA56C92151EAF500706679 /* BoardSetting.m */,
+			);
+			path = imgTrace;
+			sourceTree = "<group>";
+		};
 		3DA1D3882125400900426979 = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +296,7 @@
 		3DA1D3932125400900426979 /* Graffiti */ = {
 			isa = PBXGroup;
 			children = (
+				3D7499B6215114DF00C5B5A4 /* imgTrace */,
 				3D7499A52150D62800C5B5A4 /* img */,
 				3D4B9A3B214F7C8F00A83EE5 /* Behavior */,
 				3D4B9A41214F7C8F00A83EE5 /* Brush */,
@@ -370,11 +394,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D7499B42150E7BC00C5B5A4 /* 撤销.png in Resources */,
+				3D7499BB2151151200C5B5A4 /* imgTrace.xib in Resources */,
 				3D7499B32150E7BC00C5B5A4 /* delete.png in Resources */,
 				3D7499B52150E7BC00C5B5A4 /* 恢复.png in Resources */,
 				3D7499AE2150D63C00C5B5A4 /* 清除.png in Resources */,
 				3D7499AF2150D63C00C5B5A4 /* 拍摄.png in Resources */,
 				3DA1D3A12125400900426979 /* LaunchScreen.storyboard in Resources */,
+				3DCA56C72151E97C00706679 /* BoardSetting.xib in Resources */,
 				3D4B9A84214F7C9100A83EE5 /* BackImageBoardCollectionViewCell.xib in Resources */,
 				3DA1D39E2125400900426979 /* Assets.xcassets in Resources */,
 				3D7499AB2150D63C00C5B5A4 /* 相片.png in Resources */,
@@ -397,11 +423,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Graffiti/Pods-Graffiti-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/ZYQAssetPickerController/ZYQAssetPickerController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZYQAssetPickerController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,10 +484,12 @@
 				3D4B9A7A214F7C9100A83EE5 /* CircleBrush.m in Sources */,
 				3D4B9A75214F7C9100A83EE5 /* EraserBrush.m in Sources */,
 				3D4B9A72214F7C9100A83EE5 /* ImagePicker.m in Sources */,
+				3D7499BA2151151200C5B5A4 /* imgTrace.m in Sources */,
 				3D4B9A7D214F7C9100A83EE5 /* SquareBrush.m in Sources */,
 				3D4B9A79214F7C9100A83EE5 /* LineBrush.m in Sources */,
 				3D4B9A86214F7C9100A83EE5 /* DrawCommon.m in Sources */,
 				3D4B9A76214F7C9100A83EE5 /* PencilBrush.m in Sources */,
+				3DCA56CA2151EAF500706679 /* BoardSetting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

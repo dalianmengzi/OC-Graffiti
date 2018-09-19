@@ -1,20 +1,26 @@
 PODS:
   - MJExtension (3.0.15.1)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
   - ZYQAssetPickerController (1.2.0)
 
 DEPENDENCIES:
   - MJExtension
+  - SDWebImage (~> 4.0)
   - ZYQAssetPickerController
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - MJExtension
+    - SDWebImage
     - ZYQAssetPickerController
 
 SPEC CHECKSUMS:
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   ZYQAssetPickerController: dc692a6fb421c0dc0efcabd43eb260cfb073f7fd
 
-PODFILE CHECKSUM: 05aa08562e4bed7bc572043f2a2ddcf71d2ae81e
+PODFILE CHECKSUM: 9855883ae3810c8b5e24c77e6c1c2a906fbe93c1
 
 COCOAPODS: 1.5.3

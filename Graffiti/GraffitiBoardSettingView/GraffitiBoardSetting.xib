@@ -47,7 +47,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.1500967741" green="0.65038841960000005" blue="0.39619245790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="130-Zl-6bG" firstAttribute="width" secondItem="8EL-Lb-Lqm" secondAttribute="width" id="2Hb-Sz-MJD"/>
                         <constraint firstItem="130-Zl-6bG" firstAttribute="top" secondItem="m18-ID-szi" secondAttribute="top" id="3u2-lt-GNH"/>
@@ -274,7 +274,7 @@
         <image name="恢复.png" width="32" height="32"/>
         <image name="拍摄.png" width="40" height="40"/>
         <image name="撤销.png" width="32" height="32"/>
-        <image name="清除.png" width="32" height="32"/>
+        <image name="清除.png" width="28" height="28"/>
         <image name="画笔 .png" width="40" height="40"/>
         <image name="相片.png" width="40" height="40"/>
     </resources>
