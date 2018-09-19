@@ -7,12 +7,13 @@
 //
 
 #import "BoardSetting.h"
+#import "BackImageBoard.h"
 #import "UIView+Frame.h"
 #import "BallColorModel.h"
 static NSString * const collectionCellID = @"collectionCellID";
 
 @interface BoardSetting() <UICollectionViewDataSource,UICollectionViewDelegate> {
-
+    NSArray* list;
     NSIndexPath *_lastIndexPath;
 
 }
@@ -23,16 +24,17 @@ static NSString * const collectionCellID = @"collectionCellID";
 @property (weak, nonatomic) IBOutlet UIButton *fourWidth;
 @property (weak, nonatomic) IBOutlet UIButton *maxWidth;
 
-@property (weak, nonatomic) IBOutlet ColorBall *ballView;
+@property (nonatomic, strong) ColorBall *ballView;
 @property (nonatomic, strong) NSArray *colors;
 @property (nonatomic, strong) NSArray *colorSelectModels;
 
-
+@property (nonatomic, strong) UIColor *currentColor;
+@property (nonatomic, assign) CGFloat currentLine;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *buttomViewH;
 @property (weak, nonatomic) IBOutlet UIView *buttomView;
 @property (nonatomic, copy) boardSettingBlock stype;
 @property (weak, nonatomic) IBOutlet UIView *centerView;
-@property (weak, nonatomic) IBOutlet UISlider *sliderView;
+
 @end
 @implementation BoardSetting
 
@@ -43,7 +45,7 @@ static NSString * const collectionCellID = @"collectionCellID";
 
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:collectionCellID];
 
-
+    self.ballView = [[ColorBall alloc] init] ;
     self.centerView.hidden = self.collectionView.hidden = NO;
 
 }
@@ -59,20 +61,19 @@ static NSString * const collectionCellID = @"collectionCellID";
     CGFloat normalH = normalW * btn.currentImage.size.height / btn.currentImage.size.width;
     self.buttomViewH.constant = normalH > 70 ? 70 : normalH;
 
-     self.minWidth.layer.masksToBounds = YES;
-     self.secondWidth.layer.masksToBounds = YES;
-     self.thirdWidth.layer.masksToBounds = YES;
-     self.fourWidth.layer.masksToBounds = YES;
-     self.maxWidth.layer.masksToBounds = YES;
-     self.minWidth.layer.cornerRadius = self.minWidth.frame.size.height / 2;
-     self.secondWidth.layer.cornerRadius = self.secondWidth.frame.size.height / 2;
-     self.thirdWidth.layer.cornerRadius = self.thirdWidth.frame.size.height / 2;
-     self.fourWidth.layer.cornerRadius = self.fourWidth.frame.size.height / 2;
-     self.maxWidth.layer.cornerRadius = self.maxWidth.frame.size.height / 2;
+
+     list = @[self.minWidth, self.secondWidth,self.thirdWidth,self.fourWidth,self.maxWidth];
+
+    for (UIButton *btn in list) {
+           btn.layer.masksToBounds = YES;
+           btn.layer.cornerRadius =  btn.frame.size.height / 2;
+        }
+    self.secondWidth.layer.borderWidth = 3;
+    self.secondWidth.layer.borderColor = [UIColor whiteColor].CGColor;
     if (!_lastIndexPath){
         //设置默认是属性
         [self collectionView:self.collectionView didSelectItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]];
-        self.ballView.ballSize = 0;
+        self.currentLine = 4;
     }
 
 }
@@ -85,13 +86,13 @@ static NSString * const collectionCellID = @"collectionCellID";
 
 - (CGFloat)getLineWidth {
 
-    return self.ballView.lineWidth;
+    return self.currentLine;
 
 }
 
 - (UIColor *)getLineColor {
 
-    return self.ballView.ballColor;
+    return self.currentColor;
 
 }
 
@@ -185,7 +186,17 @@ static NSString * const collectionCellID = @"collectionCellID";
 }
 
 - (IBAction)setlineWidth:(UIButton *)sender {
-    NSLog(@"%ld", (long)sender.tag);
+
+    self.currentLine = sender.tag - 1000;
+    for (UIButton *btn in list) {
+        if (sender == btn) {
+            btn.layer.borderWidth = 3;
+            btn.layer.borderColor = [UIColor whiteColor].CGColor;
+        }else{
+            btn.layer.borderWidth = 0;
+        }
+    }
+    [[NSNotificationCenter defaultCenter] postNotificationName:SendColorAndWidthNotification object:nil];
 
 }
 
@@ -201,6 +212,7 @@ static NSString * const collectionCellID = @"collectionCellID";
     BallColorModel *model = self.colorSelectModels[indexPath.item];
     cell.backgroundColor = self.colors[[model.ballColor integerValue]];
     cell.layer.cornerRadius = 3;
+
     if (model.isBallColor) {
         cell.layer.borderWidth = 3;
         cell.layer.borderColor = [UIColor whiteColor].CGColor;
@@ -220,11 +232,17 @@ static NSString * const collectionCellID = @"collectionCellID";
     }
     _lastIndexPath = indexPath;
 
+
     BallColorModel *model = self.colorSelectModels[indexPath.item];
-    self.ballView.ballColor = self.colors[[model.ballColor integerValue]];;
+
+    self.currentColor = self.colors[[model.ballColor integerValue]];
+    for (UIButton *btn in list) {
+        btn.backgroundColor = self.currentColor;
+    }
     model.isBallColor = YES;
     [self.collectionView reloadItemsAtIndexPaths:@[indexPath]];
     self.stype(setTypeColor);
+    [[NSNotificationCenter defaultCenter] postNotificationName:SendColorAndWidthNotification object:nil];
 
 }
 
