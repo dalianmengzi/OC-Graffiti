@@ -54,7 +54,7 @@ static NSString * const collectionCellID = @"collectionCellID";
 
     self.ballView = [[ColorBall alloc] init] ;
     self.centerView.hidden = self.collectionView.hidden = NO;
-    
+
 }
 
 - (void)layoutSubviews

@@ -17,10 +17,11 @@
 @interface imgTrace ()
 
 @property (weak, nonatomic) IBOutlet PaintingView *drawView;
+@property (weak, nonatomic) IBOutlet UIImageView *Img;
 
     @property (nonatomic, strong) BoardSetting *settingBoard;
     @property (nonatomic, strong) CustomWindow *drawWindow;
-
+   
     @property (nonatomic, strong) JessicaActionSheet *pencilActionSheet;
     @property (nonatomic, strong) JessicaActionSheet *cleanActionSheet;
 @end
@@ -38,6 +39,24 @@
     [self creatRightBarButtonItem];
 
     [self showSettingBoard];
+
+    NSURL *imgURL = [NSURL URLWithString:@"https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=69342389,1062770408&fm=173&app=25&f=JPG?w=640&h=363&s=0C82E3155E014A4D07B6A3C10300308E"];
+
+
+    [self.Img sd_setImageWithURL:imgURL
+                      placeholderImage:nil
+                               options:SDWebImageRefreshCached
+                              progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL *targetURL) {
+
+                              }
+                             completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                                 //                                 weakSelf.progressView.hidden = YES;
+                                 NSLog(@"----图片加载完毕---%@", image);
+                                 self.drawView.backgroundImage = image;
+                             }];
+
+
+
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -51,7 +70,9 @@
     self.drawView.paintBrush = [BaseBrush brushWithType:BrushTypePencil];
     self.drawView.paintBrush.lineWidth = self.settingBoard.getLineWidth;
     self.drawView.paintBrush.lineColor = self.settingBoard.getLineColor;
+//    self.drawView.backgroundImage = [UIImage imageNamed:@"保存"];
 //    self.delegate = self;
+
 
 }
 
