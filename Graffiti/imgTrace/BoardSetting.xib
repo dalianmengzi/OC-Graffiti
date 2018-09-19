@@ -75,31 +75,31 @@
                     <rect key="frame" x="0.0" y="32" width="593" height="50"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hG-Qf-b8V">
-                            <rect key="frame" x="135" y="5.5" width="458" height="40"/>
+                            <rect key="frame" x="165" y="5" width="428" height="40"/>
                             <subviews>
                                 <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctg-qb-z7i">
-                                    <rect key="frame" x="0.0" y="0.0" width="114.5" height="40"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="107" height="40"/>
                                     <state key="normal" image="清除.png"/>
                                     <connections>
                                         <action selector="eraser:" destination="iN0-l3-epB" eventType="touchUpInside" id="evL-sw-PsN"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgk-83-QQ8">
-                                    <rect key="frame" x="114.5" y="0.0" width="114.5" height="40"/>
+                                    <rect key="frame" x="107" y="0.0" width="107" height="40"/>
                                     <state key="normal" image="撤销.png"/>
                                     <connections>
                                         <action selector="back:" destination="iN0-l3-epB" eventType="touchUpInside" id="N2s-cx-IBM"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBC-DT-PAc">
-                                    <rect key="frame" x="228.5" y="0.0" width="114.5" height="40"/>
+                                    <rect key="frame" x="214" y="0.0" width="107" height="40"/>
                                     <state key="normal" image="恢复.png"/>
                                     <connections>
                                         <action selector="revocation:" destination="iN0-l3-epB" eventType="touchUpInside" id="f4G-yS-2lU"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yt-hg-yWb">
-                                    <rect key="frame" x="343.5" y="0.0" width="114.5" height="40"/>
+                                    <rect key="frame" x="321" y="0.0" width="107" height="40"/>
                                     <state key="normal" image="delete.png"/>
                                     <connections>
                                         <action selector="clearAll:" destination="iN0-l3-epB" eventType="touchUpInside" id="te4-bE-bdT"/>
@@ -130,36 +130,79 @@
                                 <constraint firstAttribute="bottom" secondItem="3yt-hg-yWb" secondAttribute="bottom" id="xFV-Ws-sdd"/>
                             </constraints>
                         </view>
-                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="mgI-oR-kAg">
-                            <rect key="frame" x="33" y="10.5" width="104" height="31"/>
+                        <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Um4-J4-2dA">
+                            <rect key="frame" x="5" y="20" width="10" height="10"/>
+                            <color key="backgroundColor" red="0.92352616786956787" green="0.25904262065887451" blue="0.2716498076915741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="100" id="Fet-EN-b4p"/>
+                                <constraint firstAttribute="width" constant="10" id="S0p-Zp-V7w"/>
+                                <constraint firstAttribute="height" constant="10" id="T7h-aJ-INC"/>
                             </constraints>
-                            <color key="thumbTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <action selector="sliderView:" destination="iN0-l3-epB" eventType="valueChanged" id="uPo-LT-7Ht"/>
+                                <action selector="setlineWidth:" destination="iN0-l3-epB" eventType="touchUpInside" id="a8i-9n-hwb"/>
                             </connections>
-                        </slider>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fk-aP-SJf" customClass="ColorBall">
-                            <rect key="frame" x="12" y="17.5" width="15" height="15"/>
-                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                        <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBd-VQ-dNI">
+                            <rect key="frame" x="30" y="18" width="14" height="14"/>
+                            <color key="backgroundColor" red="0.92352616786956787" green="0.25904262065887451" blue="0.2716498076915741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="15" id="VJO-jI-6g1"/>
-                                <constraint firstAttribute="height" constant="15" id="tff-aB-q0L"/>
+                                <constraint firstAttribute="height" constant="14" id="UNF-hT-9Mq"/>
+                                <constraint firstAttribute="width" constant="14" id="b5F-Rd-bFG"/>
                             </constraints>
-                        </view>
+                            <connections>
+                                <action selector="setlineWidth:" destination="iN0-l3-epB" eventType="touchUpInside" id="7eU-Qg-Ltw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Id8-wD-Lj7">
+                            <rect key="frame" x="59" y="16" width="18" height="18"/>
+                            <color key="backgroundColor" red="0.92352616789999997" green="0.2590426207" blue="0.27164980770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="18" id="ryz-dk-vyI"/>
+                                <constraint firstAttribute="height" constant="18" id="z1g-d5-qHV"/>
+                            </constraints>
+                            <connections>
+                                <action selector="setlineWidth:" destination="iN0-l3-epB" eventType="touchUpInside" id="kXv-SV-2nS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1005" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqK-yh-qDX">
+                            <rect key="frame" x="92" y="14" width="22" height="22"/>
+                            <color key="backgroundColor" red="0.92352616789999997" green="0.2590426207" blue="0.27164980770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="5h3-PW-LUT"/>
+                                <constraint firstAttribute="width" constant="22" id="bSO-gY-fja"/>
+                            </constraints>
+                            <connections>
+                                <action selector="setlineWidth:" destination="iN0-l3-epB" eventType="touchUpInside" id="hsn-CL-5vE"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1006" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hg6-0H-DPN">
+                            <rect key="frame" x="129" y="12" width="26" height="26"/>
+                            <color key="backgroundColor" red="0.92352616789999997" green="0.2590426207" blue="0.27164980770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="azc-Mr-Xzd"/>
+                                <constraint firstAttribute="width" constant="26" id="pCa-V7-I3Q"/>
+                            </constraints>
+                            <connections>
+                                <action selector="setlineWidth:" destination="iN0-l3-epB" eventType="touchUpInside" id="DX0-MX-IGt"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <gestureRecognizers/>
                     <constraints>
-                        <constraint firstItem="1fk-aP-SJf" firstAttribute="leading" secondItem="nSf-MM-qjJ" secondAttribute="leading" constant="12" id="2TS-t7-XLt"/>
-                        <constraint firstItem="mgI-oR-kAg" firstAttribute="centerY" secondItem="nSf-MM-qjJ" secondAttribute="centerY" id="Br4-Xm-O78"/>
+                        <constraint firstItem="Id8-wD-Lj7" firstAttribute="leading" secondItem="iBd-VQ-dNI" secondAttribute="trailing" constant="15" id="3jo-iw-HEM"/>
+                        <constraint firstItem="hg6-0H-DPN" firstAttribute="centerY" secondItem="uqK-yh-qDX" secondAttribute="centerY" id="FW6-DI-NMr"/>
+                        <constraint firstItem="Um4-J4-2dA" firstAttribute="centerY" secondItem="nSf-MM-qjJ" secondAttribute="centerY" id="IOX-lq-Y3j"/>
                         <constraint firstAttribute="trailing" secondItem="1hG-Qf-b8V" secondAttribute="trailing" id="Iy9-CP-QF5"/>
+                        <constraint firstItem="Um4-J4-2dA" firstAttribute="leading" secondItem="nSf-MM-qjJ" secondAttribute="leading" constant="5" id="Sno-xL-WeH"/>
                         <constraint firstAttribute="height" constant="50" id="UDt-ed-ZUM"/>
                         <constraint firstItem="1hG-Qf-b8V" firstAttribute="centerY" secondItem="nSf-MM-qjJ" secondAttribute="centerY" id="X2s-Mn-XSG"/>
-                        <constraint firstItem="mgI-oR-kAg" firstAttribute="leading" secondItem="nSf-MM-qjJ" secondAttribute="leading" constant="35" id="XVf-n6-Ukx"/>
-                        <constraint firstItem="1hG-Qf-b8V" firstAttribute="leading" secondItem="mgI-oR-kAg" secondAttribute="trailing" id="ZCl-aO-5fG"/>
-                        <constraint firstItem="1fk-aP-SJf" firstAttribute="centerY" secondItem="nSf-MM-qjJ" secondAttribute="centerY" id="wtx-I7-8NV"/>
+                        <constraint firstItem="uqK-yh-qDX" firstAttribute="leading" secondItem="Id8-wD-Lj7" secondAttribute="trailing" constant="15" id="f81-gb-6Vh"/>
+                        <constraint firstItem="hg6-0H-DPN" firstAttribute="leading" secondItem="uqK-yh-qDX" secondAttribute="trailing" constant="15" id="hQ9-ya-yoj"/>
+                        <constraint firstItem="1hG-Qf-b8V" firstAttribute="leading" secondItem="hg6-0H-DPN" secondAttribute="trailing" constant="10" id="hhD-ro-m0L"/>
+                        <constraint firstItem="iBd-VQ-dNI" firstAttribute="leading" secondItem="Um4-J4-2dA" secondAttribute="trailing" constant="15" id="pQo-be-2b5"/>
+                        <constraint firstItem="Id8-wD-Lj7" firstAttribute="centerY" secondItem="iBd-VQ-dNI" secondAttribute="centerY" id="qiv-9v-ypF"/>
+                        <constraint firstItem="uqK-yh-qDX" firstAttribute="centerY" secondItem="Id8-wD-Lj7" secondAttribute="centerY" id="vD9-OO-KMH"/>
+                        <constraint firstItem="iBd-VQ-dNI" firstAttribute="centerY" secondItem="Um4-J4-2dA" secondAttribute="centerY" id="vSg-AG-0ri"/>
                     </constraints>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="N2d-AC-e9r">
@@ -201,12 +244,15 @@
                 </mask>
             </variation>
             <connections>
-                <outlet property="ballView" destination="1fk-aP-SJf" id="0cj-Hi-tTS"/>
                 <outlet property="buttomView" destination="m18-ID-szi" id="8aP-9J-1QN"/>
                 <outlet property="buttomViewH" destination="6aA-w8-IBC" id="7wC-Ku-q7n"/>
                 <outlet property="centerView" destination="nSf-MM-qjJ" id="8Im-h0-nCQ"/>
                 <outlet property="collectionView" destination="N2d-AC-e9r" id="gUi-Jp-uxl"/>
-                <outlet property="sliderView" destination="mgI-oR-kAg" id="ndG-Lr-r1u"/>
+                <outlet property="fourWidth" destination="uqK-yh-qDX" id="A5L-TI-6j4"/>
+                <outlet property="maxWidth" destination="hg6-0H-DPN" id="Ufa-bc-pcQ"/>
+                <outlet property="minWidth" destination="Um4-J4-2dA" id="n5N-xg-1RS"/>
+                <outlet property="secondWidth" destination="iBd-VQ-dNI" id="241-OF-4cN"/>
+                <outlet property="thirdWidth" destination="Id8-wD-Lj7" id="KC1-3P-cch"/>
             </connections>
             <point key="canvasLocation" x="497.5" y="448"/>
         </view>

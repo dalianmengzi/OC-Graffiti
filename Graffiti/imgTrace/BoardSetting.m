@@ -17,6 +17,11 @@ static NSString * const collectionCellID = @"collectionCellID";
 
 }
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UIButton *minWidth;
+@property (weak, nonatomic) IBOutlet UIButton *secondWidth;
+@property (weak, nonatomic) IBOutlet UIButton *thirdWidth;
+@property (weak, nonatomic) IBOutlet UIButton *fourWidth;
+@property (weak, nonatomic) IBOutlet UIButton *maxWidth;
 
 @property (weak, nonatomic) IBOutlet ColorBall *ballView;
 @property (nonatomic, strong) NSArray *colors;
@@ -54,6 +59,16 @@ static NSString * const collectionCellID = @"collectionCellID";
     CGFloat normalH = normalW * btn.currentImage.size.height / btn.currentImage.size.width;
     self.buttomViewH.constant = normalH > 70 ? 70 : normalH;
 
+     self.minWidth.layer.masksToBounds = YES;
+     self.secondWidth.layer.masksToBounds = YES;
+     self.thirdWidth.layer.masksToBounds = YES;
+     self.fourWidth.layer.masksToBounds = YES;
+     self.maxWidth.layer.masksToBounds = YES;
+     self.minWidth.layer.cornerRadius = self.minWidth.frame.size.height / 2;
+     self.secondWidth.layer.cornerRadius = self.secondWidth.frame.size.height / 2;
+     self.thirdWidth.layer.cornerRadius = self.thirdWidth.frame.size.height / 2;
+     self.fourWidth.layer.cornerRadius = self.fourWidth.frame.size.height / 2;
+     self.maxWidth.layer.cornerRadius = self.maxWidth.frame.size.height / 2;
     if (!_lastIndexPath){
         //设置默认是属性
         [self collectionView:self.collectionView didSelectItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]];
@@ -169,11 +184,11 @@ static NSString * const collectionCellID = @"collectionCellID";
 
 }
 
-- (IBAction)sliderView:(UISlider *)sender {
-
-    self.ballView.ballSize = sender.value;
+- (IBAction)setlineWidth:(UIButton *)sender {
+    NSLog(@"%ld", (long)sender.tag);
 
 }
+
 
 #pragma mark - collectionView
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -188,7 +203,7 @@ static NSString * const collectionCellID = @"collectionCellID";
     cell.layer.cornerRadius = 3;
     if (model.isBallColor) {
         cell.layer.borderWidth = 3;
-        cell.layer.borderColor = [UIColor purpleColor].CGColor;
+        cell.layer.borderColor = [UIColor whiteColor].CGColor;
     }else{
         cell.layer.borderWidth = 0;
     }
