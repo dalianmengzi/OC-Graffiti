@@ -15,6 +15,7 @@
 #import "PaintingView.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 @interface imgTrace ()
+@property (weak, nonatomic) IBOutlet UIScrollView *bgScroll;
 
 @property (weak, nonatomic) IBOutlet PaintingView *drawView;
 @property (weak, nonatomic) IBOutlet UIImageView *Img;
@@ -52,11 +53,33 @@
                              completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
                                  //                                 weakSelf.progressView.hidden = YES;
                                  NSLog(@"----图片加载完毕---%@", image);
-                                 self.drawView.backgroundImage = image;
+
+
+                            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,2), ^{
+
+                                     dispatch_async(dispatch_get_main_queue(), ^{
+                                          self.drawView.backgroundImage = image;
+                                     });//异步从网络加载图片
+                                 });
+
                              }];
 
+    oldFrame = self.drawView.frame;
+    CGRect rect = [[UIScreen mainScreen] bounds];
 
+    CGSize screenSize = rect.size;
+    largeFrame = CGRectMake(0 -  screenSize.width, 0 - screenSize.height, 2 * oldFrame.size.width, 2 * oldFrame.size.height);
 
+    //设置实现缩放
+        //设置代理scrollview的代理对象
+        _bgScroll.delegate=self;
+             //设置最大伸缩比例
+        _bgScroll.maximumZoomScale = 1.5;
+            //设置最小伸缩比例
+        _bgScroll.minimumZoomScale=1;
+     self.bgScroll.scrollEnabled = NO;
+//     self.navigationController.navigationBar.hidden = YES;
+    [self addGestureRecognizerToView:self.drawView];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -64,6 +87,14 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+//告诉scrollview要缩放的是哪个子控件
+-(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+ {
+        return self.drawView;
+}
+
+
 
 -(void) setupPaintBrush {
 
@@ -354,5 +385,54 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+// 添加所有的手势
+- (void) addGestureRecognizerToView:(UIView *)view
+{
+    // 旋转手势
+//    UIRotationGestureRecognizer *rotationGestureRecognizer = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(rotateView:)];
+//    [view addGestureRecognizer:rotationGestureRecognizer];
+
+    // 缩放手势
+//    UIPinchGestureRecognizer *pinchGestureRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinchView:)];
+//    [view addGestureRecognizer:pinchGestureRecognizer];
+
+    // 移动手势
+//    UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panView:)];
+//    [view addGestureRecognizer:panGestureRecognizer];
+}
+
+// 处理旋转手势
+- (void) rotateView:(UIRotationGestureRecognizer *)rotationGestureRecognizer
+{
+    UIView *view = rotationGestureRecognizer.view;
+    if (rotationGestureRecognizer.state == UIGestureRecognizerStateBegan || rotationGestureRecognizer.state == UIGestureRecognizerStateChanged) {
+        view.transform = CGAffineTransformRotate(view.transform, rotationGestureRecognizer.rotation);
+        [rotationGestureRecognizer setRotation:0];
+    }
+}
+
+// 处理缩放手势
+- (void) pinchView:(UIPinchGestureRecognizer *)pinchGestureRecognizer
+{
+
+    if (pinchGestureRecognizer.state == UIGestureRecognizerStateBegan || pinchGestureRecognizer.state == UIGestureRecognizerStateChanged) {
+
+        }
+
+
+
+}
+
+// 处理拖拉手势
+- (void) panView:(UIPanGestureRecognizer *)panGestureRecognizer
+{
+    UIView *view = panGestureRecognizer.view;
+    if (panGestureRecognizer.state == UIGestureRecognizerStateBegan || panGestureRecognizer.state == UIGestureRecognizerStateChanged) {
+        CGPoint translation = [panGestureRecognizer translationInView:view.superview];
+        [view setCenter:(CGPoint){view.center.x + translation.x, view.center.y + translation.y}];
+        [panGestureRecognizer setTranslation:CGPointZero inView:view.superview];
+    }
+}
 
 @end
