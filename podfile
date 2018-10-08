@@ -4,4 +4,5 @@ use_frameworks!
 target 'Graffiti' do
    pod 'ZYQAssetPickerController'
    pod 'MJExtension'
+   pod 'SDWebImage', '~> 4.0'
 end

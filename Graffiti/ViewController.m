@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    list = @[@"涂鸦",@"痕迹"];
+    list = @[@"涂鸦",@"痕迹",@"主题更换"];
 
     [self setTableView];
     // Do any additional setup after loading the view, typically from a nib.
@@ -54,14 +54,24 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
     NSLog(@"%@", list[indexPath.row]);
-    if (indexPath.row == 0){
-        GraffitiBoardViewController *vc = [[GraffitiBoardViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:true];
-    }else{
-        imgTrace *vc = [[imgTrace alloc] init];
-        [self.navigationController pushViewController:vc animated:true];
-    }
 
+    switch (indexPath.row) {
+        case 0:{
+                GraffitiBoardViewController *vc = [[GraffitiBoardViewController alloc] init];
+                [self.navigationController pushViewController:vc animated:true];
+
+                break;
+             }
+        case 1:{
+                imgTrace *vc = [[imgTrace alloc] init];
+                [self.navigationController pushViewController:vc animated:true];
+                break;
+            }
+
+        default:
+            NSLog(@"测试");
+            break;
+    }
 
 }
 @end
